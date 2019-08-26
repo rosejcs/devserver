@@ -1,16 +1,16 @@
-// module.exports = {
-//   devServer: {
-//     proxy: {
-//       // '/api': {
-//       //   target: 'http://restapi.amap.com/v3/weather',
-//       //   ws: true,
-//       //   changeOrigin: true
-//       // },
-//       // '/foo': {
-//       //   target: 'http://www.my.org',
-//       //   ws:true,
-//       //   changeOrigin: true
-//       // }
-//     }
-//   }
-// }
+module.exports = {
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:3000',
+        ws: true,
+        changeOrigin: true
+      },
+      // '/foo': {
+      //   target: 'http://www.my.org',
+      //   ws:true,
+      //   changeOrigin: true
+      // }
+    }
+  }
+}
